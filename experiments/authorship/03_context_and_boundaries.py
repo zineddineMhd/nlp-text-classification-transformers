@@ -997,7 +997,8 @@ def run_retrain_experiment(
         metric_for_best_model="auc",
         greater_is_better=True,
         report_to="none",
-        fp16=torch.cuda.is_available(),        seed=SEED,
+        fp16=torch.cuda.is_available(),
+        seed=SEED,
     )
 
     exp_trainer = Trainer(
